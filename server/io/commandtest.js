@@ -1,7 +1,7 @@
 //Test protobuf transmission
 
 const protoPort = 1102;
-const IP = '192.168.50.103';
+const IP = '192.168.1.133';
 
 const net = require('net');
 
@@ -14,22 +14,20 @@ protobuf.load(protopath, function(err, root){
   }
 
   let pmproto = root.lookupType("pmproto");
-  let payload = { type: 2 };
+  let payload = { type: 31, cuestack: 1, go: true, fixture_id: 1 };
   let errMsg = pmproto.verify(payload);
   if(errMsg){
     throw errMsg;
   }
   let message = pmproto.create(payload);
-  let msg = pmproto.encode(message).finish();
+  let msg = pmproto.encodeDelimited(message).finish();
 
   console.log(msg);
-
-
 
   let sock = net.createConnection({
     port: protoPort,
     host: IP,
-    localAddress: '192.168.50.248'
+    localAddress: '192.168.1.139'
   });
 
   sock.on('data', function(data){

@@ -68,6 +68,10 @@ f.write(bytearray(b'\x04\x4E\x02\x00')); # Header
 
 f.write(struct.pack("!H",fixture_count)) # Fixture count
 
+wtfisthis = struct.pack("!H",fixture_count)
+print "WTF Is this?"
+print wtfisthis
+
 for fix in data:
     fixture = patch_pb2.fixture()
     fixture.fixture_id = fix['fixture_id']

@@ -8,11 +8,11 @@ udp.on('message', function(msg, rinfo){
   console.log(rinfo);
 });
 
-udp.bind(discPort, '192.168.50.248', function(){
+udp.bind(discPort, '192.168.1.139', function(){
   udp.setBroadcast(true);
   console.log('Prometheus Finder: Listening...');
   let buf = new Buffer('ping');
-  udp.send(buf, discPort, '192.168.50.103', function(err){
+  udp.send(buf, discPort, '192.168.1.255', function(err){
     if(err){
       console.log(err);
     } else {
