@@ -1,0 +1,13 @@
+body {
+  background: #bbb;
+}
+
+.mode-header {
+  background-color: #ddd;
+  border: none;
+  text-align: center;
+}
+
+.mode-card {
+  border: none;
+}

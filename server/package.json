@@ -1,0 +1,24 @@
+{
+  "name": "p-server",
+  "version": "1.0.0",
+  "description": "API server for Prometheus",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saabstory88/prometheus_tools.js.git"
+  },
+  "keywords": [
+    "Lighting",
+    "Control",
+    "Server"
+  ],
+  "author": "Peter Milo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saabstory88/prometheus_tools.js/issues"
+  },
+  "homepage": "https://github.com/Saabstory88/prometheus_tools.js#readme"
+}
