@@ -1,24 +1,17 @@
 {
-  "name": "p-server",
-  "version": "1.0.0",
-  "description": "API server for Prometheus",
-  "main": "app.js",
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "node app.js "
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Saabstory88/prometheus_tools.js.git"
-  },
-  "keywords": [
-    "Lighting",
-    "Control",
-    "Server"
-  ],
-  "author": "Peter Milo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Saabstory88/prometheus_tools.js/issues"
-  },
-  "homepage": "https://github.com/Saabstory88/prometheus_tools.js#readme"
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "hbs": "~4.0.1",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  }
 }
