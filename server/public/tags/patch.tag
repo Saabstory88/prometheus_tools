@@ -1,5 +1,5 @@
 <patch>
-  <div class="card">
+  <div class="card" style="margin-bottom: 30px;">
     <div class="card-header">
 
       <div class="row">
@@ -8,11 +8,23 @@
         </div>
         <div class="col">
           <div class="btn-group  float-right" role="group" aria-label="ActionButtons">
-            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#colOpenPatchFile"><i class="fa fa-folder-open-o" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#colNewPatchFile"><i class="fa fa-file-o" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#colSavePatchFile"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#colAddPatchFixture">+</button>
-            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#colRemovePatchFixture">-</button>
+            <button type="button"
+              class="btn btn-secondary" data-toggle="collapse" data-target="#colOpenPatchFile"
+              data-tooltip="true" data-placement="top" title="Open">
+                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#colNewPatchFile">
+              <i class="fa fa-file-o" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#colSavePatchFile">
+              <i class="fa fa-floppy-o" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#colAddPatchFixture">
+              +
+            </button>
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#colRemovePatchFixture">
+              -
+            </button>
           </div>
         </div>
       </div>
@@ -64,6 +76,11 @@
               </div>
               <div class="card-body" style="max-width: 300px;">
                 <form onsubmit="{ addPatchFixture }">
+                  <label for="newFixtureLabel">Fixture Label</label>
+                  <input class="form-control" type="text" placeholder="{ newFx.label }" id="newFixtureLabel">
+                  <label style="padding-top: 5px;" for="newFixtureAddr">Start Address</label>
+                  <input class="form-control" type="text" placeholder="{ newFx.start_address }" id="newFixtureAddr">
+                  <br>
                   <button type="submit" class="btn btn-success">Add</button>
                 </form>
               </div>
@@ -109,49 +126,86 @@
     </div>
 
   </div>
+  <div class="card-footer">
+    <button type="button" class="btn btn-info float-right" data-toggle="collapse" data-target="#colDmxFill">
+      <i class="fa fa-th" aria-hidden="true"></i>
+    </button>
+
+    <div class="collapse control-collapse" id="colDmxFill">
+      <div class="card">
+        <div class="card-header">
+          <h6>DMX Graph</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div each="{ dmxLayout }">
+              <div style="width: 25px; margin: 2px; padding: 2px; background-color: {full ? '#0f0' : '#888'};">
+                <p align="center" style=" font-size: 8px; ">{ adr }</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </div>
 
 <script>
 
+  //-------------------------------------------
+  //FILES
+  //-------------------------------------------
+
   newPatchFile(e){
-    this.fixtures = [];
     e.preventDefault();
+    this.fixtures = [];
+    this.save();
   }
 
   removePatchFixture(e){
+    e.preventDefault();
     console.log("Removing Fixture!");
     //console.log(e);
     //console.log(e.target[1].options.selectedIndex);
-    this.fixtures.splice(e.target[1].options.selectedIndex, 1)
-    e.preventDefault();
+    this.fixtures.splice(e.target[1].options.selectedIndex, 1);
+    this.save();
   }
 
-  addPatchFixture(e) {
-    let newFx = {
-        "channel_map": [
-            1,
-            2,
-            3,
-            4
-        ],
-        "fixture_id": 1,
-        "fixture_type": 1,
-        "label": "Fixture 1",
-        "num_channels": 4,
-        "start_address": 1
-    }
+  save(){
+    localStorage.setItem("patch", JSON.stringify(this.fixtures));
+    this.fixtures = JSON.parse(localStorage.getItem("patch"));
+    this.lastSave = new Date();
+    this.calculateDMX();
+    this.refreshNewFixture();
+  }
+
+  //-------------------------------------------
+  //FIXTURES
+  //-------------------------------------------
+
+  this.newFx = {
+      "channel_map": [
+          1,
+          2,
+          3,
+          4
+      ],
+      "fixture_id": 1,
+      "fixture_type": 1,
+      "label": "Fixture 1",
+      "num_channels": 4,
+      "start_address": 1
+  }
+
+  refreshNewFixture(){
     if(this.fixtures.length != 0){
       let lastFx = this.fixtures[this.fixtures.length - 1];
-      newFx.start_address = lastFx.start_address + lastFx.num_channels;
-      newFx.label = "Fixture " + (this.fixtures.length + 1).toString();
-    }
-    this.fixtures.push(newFx);
-    e.preventDefault()
-  }
-
-  this.fixtures = [
-      {
+      this.newFx.start_address = lastFx.start_address + lastFx.num_channels;
+      this.newFx.label = "Fixture " + (this.fixtures.length + 1).toString();
+    } else {
+      this.newFx = {
           "channel_map": [
               1,
               2,
@@ -163,21 +217,62 @@
           "label": "Fixture 1",
           "num_channels": 4,
           "start_address": 1
-      },
-      {
-          "channel_map": [
-              1,
-              2,
-              3,
-              4
-          ],
-          "fixture_id": 2,
-          "fixture_type": 1,
-          "label": "Fixture 2",
-          "num_channels": 4,
-          "start_address": 5
       }
-  ]
+    }
+
+    this.newFx.num_channels = this.newFx.channel_map.length;
+  }
+
+  addPatchFixture(e) {
+    e.preventDefault();
+
+    this.fixtures.push($.extend({}, this.newFx));
+    this.save();
+
+  }
+
+  calculateDMX(){
+    this.dmxLayout = new Array();
+
+    for(let i = 0; i < 1024; i++){
+      let newEl = {
+        adr: i+1,
+        full: false
+      }
+      this.dmxLayout.push(newEl);
+    }
+
+
+    for(let i = 0; i < this.fixtures.length; i++){
+      let start = (this.fixtures[i].start_address - 1);
+      let end = (this.fixtures[i].channel_map.length + start);
+      for(let j = start; j < end; j++){
+        this.dmxLayout[j].full = true;
+      }
+    }
+  }
+
+  //-------------------------------------------
+  //INIT
+  //-------------------------------------------
+
+  //Just for sanity
+  console.log(localStorage.getItem("patch"));
+
+  this.lastSave = new Date(); //Track last save to localStorage
+
+  if(localStorage.getItem("patch") == null){
+    this.fixtures = [];
+    this.save();
+  } else {
+    this.fixtures = JSON.parse(localStorage.getItem("patch"));
+    this.calculateDMX();
+  }
+
+  this.refreshNewFixture();
+
+  //Track the dmx layout
+
 
   </script>
 
