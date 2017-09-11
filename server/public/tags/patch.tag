@@ -35,11 +35,21 @@
           <div class="collapse control-collapse" id="colOpenPatchFile">
             <div class="card">
               <div class="card-header bd-warning">
-                <h6>Open Patch</h6>
+                <h6>Open Patch
+                <button type="button" class="btn btn-info float-right" onclick="{ getPatchFileList }">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+                </h6>
               </div>
               <div class="card-body" style="max-width: 300px;">
                 <p>Select a patch file to open:</p>
-                <button type="button" class="btn btn-secondary" onclick="{ newPatchFile }">Open</button>
+                <form onsubmit="{ loadPatchFile }">
+                  <select ref="patchFS" class="form-control" id="patchFileSelect">
+                    <option each={ pf, i in patchFiles } value="{ pf }">{ pf }</option>
+                  </select>
+                  <br>
+                  <button type="submit" class="btn btn-secondary" >Open</button>
+                </form>
               </div>
             </div>
           </div>
@@ -63,8 +73,14 @@
                 <h6>Save Patch</h6>
               </div>
               <div class="card-body" style="max-width: 300px;">
-                <p>File name for Patch file</p>
-                <button type="button" class="btn btn-primary" onclick="{ newPatch }">Save</button>
+                <form onsubmit="{ savePatchFile }">
+                  <p>File name for Patch file</p>
+                  <input type="text" placeholder="newPatch" ref="patchSaveName">
+                  </input>
+                  <br>
+                  <br>
+                  <button type="submit" class="btn btn-primary">Save</button>
+                </form>
               </div>
             </div>
           </div>
@@ -77,9 +93,15 @@
               <div class="card-body" style="max-width: 300px;">
                 <form onsubmit="{ addPatchFixture }">
                   <label for="newFixtureLabel">Fixture Label</label>
-                  <input class="form-control" type="text" placeholder="{ newFx.label }" id="newFixtureLabel">
+                  <input class="form-control" type="text" ref="newFixtureLabel" value="{ newFx.label }">
+                  </input>
                   <label style="padding-top: 5px;" for="newFixtureAddr">Start Address</label>
-                  <input class="form-control" type="text" placeholder="{ newFx.start_address }" id="newFixtureAddr">
+                  <input class="form-control" type="number" ref="newFixtureAddr" value="{ newFx.start_address }">
+                  </input>
+                  <label style="padding-top: 5px;" >Fixture Type</label>
+                  <select ref="newFixtureType" class="form-control" id="patchFileSelect">
+                    <option each={ fx, i in fixtureTypes } value="{ i }">{ fx.name }</option>
+                  </select>
                   <br>
                   <button type="submit" class="btn btn-success">Add</button>
                 </form>
@@ -117,10 +139,7 @@
         </div>
         <div class="card-body">
           <p>Parameters:</p>
-          <span class="badge badge-danger">{ start_address }</span>
-          <span class="badge badge-success">{ start_address + 1 }</span>
-          <span class="badge badge-primary">{ start_address + 2 }</span>
-          <span class="badge badge-warning">{ start_address + 3 }</span>
+          <span each={ channel, i in channel_map } class="badge { styleChannel(channel) }">{ (parseInt(start_address) + i) }</span>
         </div>
       </div>
     </div>
@@ -154,6 +173,37 @@
 
 <script>
 
+  styleChannel(num){
+    if (num == 1) {
+      return "badge-light"
+    } else if (num == 2){
+      return "badge-danger"
+    } else if (num == 3){
+      return "badge-success"
+    } else if (num == 4){
+      return "badge-primary"
+    } else if (num == 5){
+      return "badge-warning"
+    } else {
+      return ""
+    }
+  }
+
+  let self = this;
+
+  this.fixtureTypes = [
+    {
+      name: "Generic Intensity",
+      "channel_map": [1]
+    },{
+      name: "Generic RGB",
+      "channel_map": [2,3,4]
+    },{
+      name: "Generic RGBW",
+      "channel_map": [2,3,4,5]
+    }
+  ]
+
   //-------------------------------------------
   //FILES
   //-------------------------------------------
@@ -179,6 +229,67 @@
     this.lastSave = new Date();
     this.calculateDMX();
     this.refreshNewFixture();
+    this.getPatchFileList();
+  }
+
+  getPatchFileList(){
+    let url = '/api/patch/list'; //random adress
+    $.ajax({
+      url: url,
+      type: "GET",
+      dataType: "json",
+      contentType: "application/json; charset=utf-8",
+      success: function(data) {
+        self.patchFiles = data
+      }
+    });
+    //console.log(self.patchFiles);
+  }
+
+  loadPatchFile(e){
+    e.preventDefault();
+    let filename = this.refs.patchFS.value;
+    let url = '/json/patch/' + filename;
+
+    $.ajax({
+      url: url,
+      type: "GET",
+      dataType: "json",
+      contentType: "application/json; charset=utf-8",
+      success: function(data) {
+        console.log(data);
+        self.fixtures = data;
+        self.update();
+        self.save();
+      }
+    });
+  }
+
+  savePatchFile(e){
+    e.preventDefault();
+
+    let filename = this.refs.patchSaveName.value;
+    let url = '/api/patch/save/' + filename;
+
+    console.log(url);
+
+    let data = JSON.stringify(this.fixtures);
+    //console.log(data);
+
+    $.ajax({
+      type: "POST",
+      url: url,
+      contentType: "application/json",
+      dataType: "json",
+      success: function (msg) {
+        console.log(msg);
+      },
+      error: function(error){
+        console.log("Something went wrong", error);
+      },
+      data: data
+    });
+
   }
 
   //-------------------------------------------
@@ -226,7 +337,18 @@
   addPatchFixture(e) {
     e.preventDefault();
 
-    this.fixtures.push($.extend({}, this.newFx));
+    let fxName = this.refs.newFixtureLabel.value
+    let fxAdr = parseInt(this.refs.newFixtureAddr.value)
+    let fxType = this.refs.newFixtureType.value
+
+    let newFx = $.extend({}, this.newFx);
+
+    newFx.label = fxName;
+    newFx.start_address = fxAdr;
+    newFx.channel_map = this.fixtureTypes[fxType].channel_map;
+    newFx.num_channels = newFx.channel_map.length;
+
+    this.fixtures.push(newFx);
     this.save();
 
   }
@@ -269,7 +391,10 @@
     this.calculateDMX();
   }
 
+  this.patchFiles = [];
+
   this.refreshNewFixture();
+  this.getPatchFileList();
 
   //Track the dmx layout
 
