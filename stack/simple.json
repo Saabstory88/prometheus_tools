@@ -1,0 +1,162 @@
+{
+    "cuestacks": [
+        {
+            "cuestack_id": 1,
+            "cuesteps": [
+                {
+                    "fixtures": [
+                        {
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 1
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 2
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 3
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 4
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 5
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 6
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 7
+                        },,{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 8
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 9
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 10
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 11
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 12
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 13
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 14
+                        },,{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 15
+                        },{
+                            "color": {
+                                "blue": 255,
+                                "green": 255,
+                                "intensity": 65535,
+                                "red": 255
+                            },
+                            "fade": 1000,
+                            "fixture_id": 16
+                        }
+                    ],
+                    "wait": 1000
+                }
+            ],
+            "label": "Hello Cue",
+            "loop": true
+        }
+    ],
+    "version": 1
+}

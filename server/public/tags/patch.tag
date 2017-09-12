@@ -227,6 +227,11 @@
     localStorage.setItem("patch", JSON.stringify(this.fixtures));
     this.fixtures = JSON.parse(localStorage.getItem("patch"));
     this.lastSave = new Date();
+    for(let i = 0; i < this.fixtures.length; i++){
+
+      this.fixtures[i].fixture_id = (i + 1);
+      console.log(this.fixtures[i].fixture_id)
+    }
     this.calculateDMX();
     this.refreshNewFixture();
     this.getPatchFileList();
@@ -267,6 +272,8 @@
 
   savePatchFile(e){
     e.preventDefault();
+
+    this.save();
 
     let filename = this.refs.patchSaveName.value;
     let url = '/api/patch/save/' + filename;
