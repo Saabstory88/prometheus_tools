@@ -1,0 +1,38 @@
+[
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 1,
+    "fixture_type": "1",
+    "label": "Fixture 1",
+    "num_channels": 3,
+    "start_address": 1
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 2,
+    "fixture_type": "1",
+    "label": "Fixture 2",
+    "num_channels": 3,
+    "start_address": 4
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 3,
+    "fixture_type": "1",
+    "label": "Fixture 3",
+    "num_channels": 3,
+    "start_address": 7
+  }
+]

@@ -146,6 +146,7 @@
 
   </div>
   <div class="card-footer">
+    <p>Patch: <strong>{ localStorage.getItem('patchName'); }</strong></p>
     <button type="button" class="btn btn-info float-right" data-toggle="collapse" data-target="#colDmxFill">
       <i class="fa fa-th" aria-hidden="true"></i>
     </button>
@@ -224,11 +225,11 @@
   }
 
   save(){
-    localStorage.setItem("patch", JSON.stringify(this.fixtures));
+    localStorage.setItem("patch", JSON.stringify(this.fixtures, null, 2));
     this.fixtures = JSON.parse(localStorage.getItem("patch"));
     this.lastSave = new Date();
+    this.fileName = localStorage.getItem('patchName');
     for(let i = 0; i < this.fixtures.length; i++){
-
       this.fixtures[i].fixture_id = (i + 1);
       console.log(this.fixtures[i].fixture_id)
     }
@@ -255,6 +256,7 @@
     e.preventDefault();
     let filename = this.refs.patchFS.value;
     localStorage.setItem('patchName', filename);
+    self.patchName = localStorage.getItem('patchName');
     let url = '/json/patch/' + filename;
 
     $.ajax({
@@ -278,7 +280,8 @@
     this.save();
 
     let filename = this.refs.patchSaveName.value;
-    localStorage.setItem('patchName', filename);
+    filename = filename.split('.')[0];
+    localStorage.setItem('patchName', (filename + '.json'));
     let url = '/api/patch/save/' + filename;
 
     console.log(url);
@@ -406,6 +409,7 @@
 
   this.refreshNewFixture();
   this.getPatchFileList();
+  this.patchName = localStorage.getItem('patchName');
 
   //Track the dmx layout
 

@@ -15,3 +15,13 @@ a {
 .control-collapse {
   margin-bottom: 10px;
 }
+
+.cs-card {
+  margin-bottom: 10px;
+}
+
+.cue-fx-card {
+  width: 48px;
+  height: 96px;
+  margin: 5px;
+}
