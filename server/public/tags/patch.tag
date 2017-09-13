@@ -254,6 +254,7 @@
   loadPatchFile(e){
     e.preventDefault();
     let filename = this.refs.patchFS.value;
+    localStorage.setItem('patchName', filename);
     let url = '/json/patch/' + filename;
 
     $.ajax({
@@ -268,6 +269,7 @@
         self.save();
       }
     });
+
   }
 
   savePatchFile(e){
@@ -276,6 +278,7 @@
     this.save();
 
     let filename = this.refs.patchSaveName.value;
+    localStorage.setItem('patchName', filename);
     let url = '/api/patch/save/' + filename;
 
     console.log(url);
@@ -353,6 +356,7 @@
     newFx.label = fxName;
     newFx.start_address = fxAdr;
     newFx.channel_map = this.fixtureTypes[fxType].channel_map;
+    newFx.fixture_type = fxType;
     newFx.num_channels = newFx.channel_map.length;
 
     this.fixtures.push(newFx);
