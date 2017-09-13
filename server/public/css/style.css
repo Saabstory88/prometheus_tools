@@ -29,3 +29,8 @@ a {
 .num-in {
     text-align:right;
 }
+
+.sticky {
+  position:fixed;
+  max-width: 20%;
+}

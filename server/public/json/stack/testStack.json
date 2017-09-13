@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "cuestacks": [
+    {
+      "cuestack_id": 0,
+      "label": "New Stack",
+      "loop": false,
+      "tweet": "None",
+      "cuesteps": [
+        {
+          "wait": 1000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 5000
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 5000
+            }
+          ]
+        },
+        {
+          "wait": 1000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "patch": "chruch.json"
+}
