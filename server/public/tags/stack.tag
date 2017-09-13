@@ -162,12 +162,13 @@
                         <div class="col-md-6">
                           <div class="input-group">
                             <span class="input-group-addon" id="basic-addon1">FX:</span>
-                            <select multiple class="form-control" id="fxSel{i}{j}">
+                            <select multiple class="form-control" id="fxSel_{i}_{j}">
                               <option each="{ fixture, k in step.fixtures }" value="{ k }">
                                 { fixture.fixture_id }
                               </option>
                             </select>
                           </div>
+                          <br>
                           <button class="btn btn-warning" type="submit">
                             Edit
                           </button>
@@ -175,19 +176,19 @@
                         <div class="col-md-6" >
                           <div class="input-group">
                             <span class="input-group-addon" style="background-color: #fdd;">Red:</span>
-                            <input class="form-control" type="number" min="0" max="255" step="1" value="0"></input>
+                            <input class="form-control num-in " type="number" min="0" max="100" step="1" value="0"></input>
                           </div>
                           <div class="input-group">
                             <span class="input-group-addon" style="background-color: #dfd;">Green:</span>
-                            <input class="form-control" type="number" min="0" max="255" step="1" value="0"></input>
+                            <input class="form-control num-in " type="number" min="0" max="100" step="1" value="0"></input>
                           </div>
                           <div class="input-group">
                             <span class="input-group-addon" style="background-color: #ddf;">Blue:</span>
-                            <input class="form-control" type="number" min="0" max="255" step="1" value="0"></input>
+                            <input class="form-control num-in " type="number" min="0" max="100" step="1" value="0"></input>
                           </div>
                           <div class="input-group">
                             <span class="input-group-addon" style="background-color: #ddd;">Intensity:</span>
-                            <input class="form-control" type="number" min="0" max="255" step="1" value="0"></input>
+                            <input class="form-control num-in " type="number" min="0" max="100" step="1" value="100"></input>
                           </div>
                         </div>
                       </div>
@@ -288,9 +289,11 @@ fxColor(params){
   }
   if(params.red){
     rgb.r = parseInt(params.red * (params.intensity / 65535));
-  } else if (params.green){
+  }
+  if (params.green){
     rgb.g = parseInt(params.green * (params.intensity / 65535));
-  } else if (params.blue){
+  }
+  if (params.blue){
     rgb.b = parseInt(params.blue * (params.intensity / 65535));
   }
   return ("#" +
@@ -333,8 +336,33 @@ addStep(e){
 changeFixtures(e){
   e.preventDefault();
   let selID = '#' + e.target[0].id;
+
   console.log(e.target[0].id);
-  console.log($(selID).val());
+
+  let sel = $(selID).val();
+
+  selID = selID.split('_');
+
+  let csid = parseInt(selID[1]);
+  let stid = parseInt(selID[2]);
+
+  let color = {}
+
+  color.r = parseInt(e.target[2].value / 100 * 255);
+  color.g = parseInt(e.target[3].value / 100 * 255);
+  color.b = parseInt(e.target[4].value / 100 * 255);
+  color.i = parseInt(e.target[5].value / 100 * 65535);
+
+  for(let i = 0; i < sel.length; i++){
+    let index = parseInt(sel[i]);
+    this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[index].color.red = color.r;
+    this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[index].color.green = color.g;
+    this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[index].color.blue = color.b;
+    this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[index].color.intensity = color.i;
+    console.log(this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[index].color);
+  }
+
+  this.save();
 }
 
 
@@ -347,6 +375,11 @@ save(){
   localStorage.setItem('cuefile', JSON.stringify(this.cuefile, null, 2));
   this.cuefile = JSON.parse(localStorage.getItem('cuefile'));
   this.getStackFileList();
+}
+
+createNewStack(){
+  this.cuefile = [];
+  this.save();
 }
 
 getStackFileList(){

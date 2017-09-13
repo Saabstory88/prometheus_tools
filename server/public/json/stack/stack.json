@@ -9,9 +9,9 @@
                         {
                             "color": {
                                 "blue": 0,
-                                "green": 0,
+                                "green": 128,
                                 "intensity": 65535,
-                                "red": 255
+                                "red": 128
                             },
                             "fade": 1000,
                             "fixture_id": 1

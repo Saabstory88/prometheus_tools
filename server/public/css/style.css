@@ -25,3 +25,7 @@ a {
   height: 96px;
   margin: 5px;
 }
+
+.num-in {
+    text-align:right;
+}
