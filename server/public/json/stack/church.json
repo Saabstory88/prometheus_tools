@@ -1,0 +1,1603 @@
+{
+  "version": 1,
+  "cuestacks": [
+    {
+      "cuestack_id": 1,
+      "label": "New Stack",
+      "loop": true,
+      "tweet": "None",
+      "cuesteps": [
+        {
+          "wait": 5000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        },
+        {
+          "wait": 10000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        },
+        {
+          "wait": 10000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 240,
+                "green": 169,
+                "blue": 36
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        },
+        {
+          "wait": 10000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 10
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        },
+        {
+          "wait": 10000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 40,
+                "green": 149,
+                "blue": 247
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        },
+        {
+          "wait": 10000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 247,
+                "green": 40,
+                "blue": 201
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        },
+        {
+          "wait": 5000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 245,
+                "green": 230,
+                "blue": 147
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cuestack_id": 2,
+      "label": "New Stack",
+      "loop": true,
+      "tweet": "None",
+      "cuesteps": [
+        {
+          "wait": 3000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        },
+        {
+          "wait": 3000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 2,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 3,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 4,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 5,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 6,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 7,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 8,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 9,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 10,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 11,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 12,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 13,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 14,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 1000,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 1000,
+              "checked": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "patch": "church.json"
+}

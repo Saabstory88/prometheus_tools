@@ -9,7 +9,7 @@
     "fixture_type": 1,
     "label": "Fixture 1",
     "num_channels": 3,
-    "start_address": 1
+    "start_address": 5
   },
   {
     "channel_map": [
@@ -19,7 +19,7 @@
     "fixture_type": 1,
     "label": "Fixture 2",
     "num_channels": 1,
-    "start_address": 4
+    "start_address": 8
   },
   {
     "channel_map": [
@@ -31,7 +31,7 @@
     "fixture_type": 1,
     "label": "Fixture 3",
     "num_channels": 3,
-    "start_address": 5
+    "start_address": 1
   },
   {
     "channel_map": [
@@ -41,7 +41,7 @@
     "fixture_type": 1,
     "label": "Fixture 4",
     "num_channels": 1,
-    "start_address": 8
+    "start_address": 4
   },
   {
     "channel_map": [

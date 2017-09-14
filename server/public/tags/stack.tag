@@ -10,23 +10,41 @@
         <div>
           <form onsubmit="{ applyColor }">
             <div id="mainColorPicker" class="input-group colorpicker-component">
-              <input type="text" value="#00AABB" class="form-control" />
+              <input type="text" value="#ffffff" class="form-control" />
               <span class="input-group-addon"><i></i></span>
             </div>
             <br>
+            <div class="btn-group" role="group" aria-label="ActionButtons">
               <button class="btn btn-sm btn-primary" type="submit">
                 Apply
               </button>
+              <button class="btn btn-sm btn-success" onclick="{ addColor }">
+                Save
+              </button>
+            </div>
           </form>
+        </div>
+        <br>
+        <div>
+          <p>Colors:</p>
+          <div style="height: 100px; overflow: auto;">
+            <div class="d-flex flex-wrap">
+              <div each="{ palette, i in palettes }" class="p-2"
+                style="height: 36px; width: 36px; background-color: { fxColor(palette) }; margin: 4px; border-radius: 3px;"
+                onclick="{ paletteColor }">
+                <i onclick="{ removeColor }"class="fa fa-window-close fa-1" style="position:relative; left:-8px; top:-11px;" aria-hidden="true">
+                </i></div>
+            </div>
+          </div>
         </div>
         <br>
         <div>
           <p> Select: </p>
           <button class="btn btn-sm btn-success" type="button" onclick="{ selectAll }">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-check" aria-hidden="true"></i>
           </button>
           <button class="btn btn-sm btn-warning" type="button" onclick="{ deselectAll }">
-            <i class="fa fa-window-close-o" aria-hidden="true"></i>
+            <i class="fa fa-ban" aria-hidden="true"></i>
           </button>
         </div>
       </div>
@@ -123,7 +141,7 @@
 
       </div>
 
-      <div class="card-body bg-secondary">
+      <div class="card-body bg-secondary" >
         <div each={ cuestack, i in cuefile.cuestacks} class="card cs-card">
 
           <div class="card-header">
@@ -137,7 +155,7 @@
                   <button type="button" class="btn btn-sm {cuestack.loop ? 'btn-primary' : 'btn-secondary'}" disabled>
                     Loop
                   </button>
-                  <button type="button" class="btn btn-sm btn-success" data-toggle="collapse" data-target="#colAddStep{ i }">
+                  <button type="button" class="btn btn-sm btn-success" onclick="{addStep}">
                     +
                   </button>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="collapse" data-target="#colEditStack{ i }">
@@ -172,26 +190,17 @@
                       Toggle Loop
                     </button>
                   </form>
+                  <div class="input-group" style="margin: 5px;">
+                    <input id="newStackName{ i }" type="text" class="form-control" value="New Name">
+                    <span class="input-group-btn">
+                      <button class="btn btn-warning" type="button" onclick="{ updateStackName }">Rename</button>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="collapse control-collapse" id="colAddStep{ i }">
-              <div class="card" style="margin-top: 10px;">
-                <div class="card-header">
-                  <h6>Add Step</h6>
-                </div>
-                <div class="card-body" style="max-width: 300px;">
-                  <form onsubmit="{  addStep }">
-                    <button class="btn btn-success" type="submit">
-                      Add
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-
+            
           <div class="card-body">
             <div each={ step , j in cuestack.cuesteps } class="card" style="margin-bottom: 10px;">
 
@@ -265,8 +274,8 @@
                   <div each='{ fixture, k in step.fixtures }'
                     class="card cue-fx-card"
                     style="border-width: 4px; border-color: { fixture.checked ? '#0f0' : '#aaa'}">
-                    <div class="card-header" style="padding-bottom: 0px;">
-                      <p style="white-space:nowrap; text-align: center;">{ fixture.fixture_id }</p>
+                    <div class="card-header" style="padding-bottom: 0px; text-align: center;">
+                      <p style="white-space:nowrap;">{ fixture.fixture_id }</p>
                     </div>
                     <div class="card-body"
                       onclick="{ toggleSelect }"
@@ -301,14 +310,38 @@ let self = this;
 //LIST OPS
 //-------------------------------------------
 
+removeColor(e){
+  e.preventDefault();
+  let index = e.item.i;
+  this.palettes.splice(index, 1);
+  this.save();
+}
+
+addColor(e){
+  e.preventDefault();
+  let color = $('#mainColorPicker').data('colorpicker').color.toRGB();
+  color.a = parseInt(color.a * 65535);
+  this.palettes.push(color);
+  this.save();
+}
+
+paletteColor(e){
+  e.preventDefault();
+  let index = e.item.i;
+  this.setColorActive(this.palettes[index]);
+  this.save();
+}
+
 selectThese(e){
   e.preventDefault();
   elID = e.srcElement.id.split('_');
   let csid = parseInt(elID[1]);
   let stid = parseInt(elID[2]);
+  console.log(elID);
   for(let i = 0; i < this.cuefile.cuestacks[csid].cuesteps[stid].fixtures.length; i++){
     this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[i].checked = true;
   }
+  this.save();
 }
 
 updateWait(e){
@@ -319,6 +352,7 @@ updateWait(e){
   let csid = parseInt(elID[1]);
   let stid = parseInt(elID[2]);
   this.cuefile.cuestacks[csid].cuesteps[stid].wait = fadeTime;
+  this.save();
 }
 
 updateFade(e){
@@ -332,6 +366,16 @@ updateFade(e){
     this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[i].fade = fadeTime;
     console.log(this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[i])
   }
+  this.save();
+}
+
+updateStackName(e){
+  e.preventDefault();
+  let elID = "#newStackName"  + e.item.i;
+  let newName = $(elID)[0].value;
+  console.log(newName);
+  this.cuefile.cuestacks[e.item.i].label = newName;
+  this.save();
 }
 
 applyColor(e){
@@ -453,12 +497,18 @@ fxColor(params){
   }
   if(params.red){
     rgb.r = parseInt(params.red * (params.intensity / 65535));
+  } else if (params.r){
+    rgb.r = parseInt(params.r * (params.a / 65535));
   }
   if (params.green){
     rgb.g = parseInt(params.green * (params.intensity / 65535));
+  } else if (params.g){
+    rgb.g = parseInt(params.g * (params.a / 65535));
   }
   if (params.blue){
     rgb.b = parseInt(params.blue * (params.intensity / 65535));
+  } else if (params.b){
+    rgb.b = parseInt(params.b * (params.a / 65535));
   }
   return ("#" +
     ("0" + parseInt(rgb.r,10).toString(16)).slice(-2) +
@@ -489,13 +539,14 @@ deleteStack(e){
   let stepIndex = e.item.i;
   console.log("Will delete: " + stepIndex);
   this.cuefile.cuestacks.splice(stepIndex, 1);
+  this.save();
 }
 
 addStep(e){
   e.preventDefault();
   let index = e.item.i;
   let newStep = this.newCuestep({
-    wait: 1000,
+    wait: 10000,
     fade: 1000
   });
   console.log(newStep)
@@ -511,14 +562,16 @@ addStep(e){
 save(){
   this.cuefile.patch = localStorage.getItem('patchName');
   localStorage.setItem('cuefile', JSON.stringify(this.cuefile, null, 2));
+  localStorage.setItem('palettes', JSON.stringify(this.palettes, null, 2));
   this.cuefile = JSON.parse(localStorage.getItem('cuefile'));
+  this.palettes = JSON.parse(localStorage.getItem('palettes'));
   this.getStackFileList();
 }
 
 addCueStack(e){
   e.preventDefault();
   this.cuefile.cuestacks.push(this.newCuestack({
-    id: (this.cuefile.cuestacks.length),
+    id: (this.cuefile.cuestacks.length + 1),
     label: "New Stack",
     loop: false,
     tweet: "None"
@@ -531,7 +584,7 @@ newStackFile(){
   this.cuefile.version = 1;
   this.cuefile.cuestacks = new Array();
   let newStack = this.newCuestack({
-    id: 0,
+    id: 1,
     label: "New Stack",
     loop: false,
   });
@@ -649,6 +702,31 @@ loadPatchFile(){
 - 0x06 : Cool White
 - 0x07 : Warm White
 //-------------------------------------------*/
+
+if(localStorage.getItem('palettes') != null){
+  this.palettes = JSON.parse(localStorage.getItem('palettes'));
+} else {
+  this.palettes = [
+    {
+      r: 0, g: 0, b: 0, a: 65535
+    },{
+      r: 255, g: 255, b: 255, a: 65535
+    },{
+      r: 255, g: 0, b: 0, a: 65535
+    },{
+      r: 255, g: 255, b: 0, a: 65535
+    },{
+      r: 0, g: 255, b: 0, a: 65535
+    },{
+      r: 0, g: 255, b: 255, a: 65535
+    },{
+      r: 0, g: 0, b: 255, a: 65535
+    },{
+      r: 255, g: 0, b: 255, a: 65535
+    }
+  ];
+}
+
 
 
 if(localStorage.getItem('cuefile') != null){
