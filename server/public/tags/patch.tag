@@ -352,7 +352,7 @@
 
     let fxName = this.refs.newFixtureLabel.value
     let fxAdr = parseInt(this.refs.newFixtureAddr.value)
-    let fxType = this.refs.newFixtureType.value
+    let fxType = parseInt(this.refs.newFixtureType.value)
 
     let newFx = $.extend({}, this.newFx);
 

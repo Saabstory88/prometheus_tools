@@ -1,0 +1,156 @@
+[
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 1,
+    "fixture_type": 1,
+    "label": "Fixture 1",
+    "num_channels": 3,
+    "start_address": 1
+  },
+  {
+    "channel_map": [
+      1
+    ],
+    "fixture_id": 2,
+    "fixture_type": 0,
+    "label": "Fixture 2",
+    "num_channels": 1,
+    "start_address": 4
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 3,
+    "fixture_type": 1,
+    "label": "Fixture 3",
+    "num_channels": 3,
+    "start_address": 5
+  },
+  {
+    "channel_map": [
+      1
+    ],
+    "fixture_id": 4,
+    "fixture_type": 0,
+    "label": "Fixture 4",
+    "num_channels": 1,
+    "start_address": 8
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 5,
+    "fixture_type": 1,
+    "label": "Fixture 5",
+    "num_channels": 3,
+    "start_address": 9
+  },
+  {
+    "channel_map": [
+      1
+    ],
+    "fixture_id": 6,
+    "fixture_type": 0,
+    "label": "Fixture 6",
+    "num_channels": 1,
+    "start_address": 12
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 7,
+    "fixture_type": 1,
+    "label": "Fixture 7",
+    "num_channels": 3,
+    "start_address": 13
+  },
+  {
+    "channel_map": [
+      1
+    ],
+    "fixture_id": 8,
+    "fixture_type": 0,
+    "label": "Fixture 8",
+    "num_channels": 1,
+    "start_address": 16
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 9,
+    "fixture_type": 1,
+    "label": "Fixture 9",
+    "num_channels": 3,
+    "start_address": 17
+  },
+  {
+    "channel_map": [
+      1
+    ],
+    "fixture_id": 10,
+    "fixture_type": 0,
+    "label": "Fixture 10",
+    "num_channels": 1,
+    "start_address": 20
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 11,
+    "fixture_type": 1,
+    "label": "Fixture 11",
+    "num_channels": 3,
+    "start_address": 21
+  },
+  {
+    "channel_map": [
+      1
+    ],
+    "fixture_id": 12,
+    "fixture_type": 0,
+    "label": "Fixture 12",
+    "num_channels": 1,
+    "start_address": 24
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 13,
+    "fixture_type": 1,
+    "label": "Fixture 13",
+    "num_channels": 3,
+    "start_address": 25
+  },
+  {
+    "channel_map": [
+      1
+    ],
+    "fixture_id": 14,
+    "fixture_type": 0,
+    "label": "Fixture 14",
+    "num_channels": 1,
+    "start_address": 28
+  }
+]

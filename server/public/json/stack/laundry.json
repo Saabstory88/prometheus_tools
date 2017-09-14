@@ -152,17 +152,6 @@
               },
               "fade": 0,
               "checked": false
-            },
-            {
-              "fixture_id": 14,
-              "color": {
-                "intensity": 65535,
-                "red": 255,
-                "green": 0,
-                "blue": 255
-              },
-              "fade": 0,
-              "checked": false
             }
           ]
         },
@@ -303,17 +292,6 @@
             },
             {
               "fixture_id": 13,
-              "color": {
-                "intensity": 65535,
-                "red": 0,
-                "green": 255,
-                "blue": 255
-              },
-              "fade": 0,
-              "checked": false
-            },
-            {
-              "fixture_id": 14,
               "color": {
                 "intensity": 65535,
                 "red": 0,
@@ -470,17 +448,6 @@
               },
               "fade": 0,
               "checked": false
-            },
-            {
-              "fixture_id": 14,
-              "color": {
-                "intensity": 65535,
-                "red": 255,
-                "green": 255,
-                "blue": 0
-              },
-              "fade": 0,
-              "checked": false
             }
           ]
         },
@@ -558,7 +525,10 @@
             {
               "fixture_id": 8,
               "color": {
-                "intensity": 0
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
               },
               "fade": 0,
               "checked": false
@@ -577,7 +547,10 @@
             {
               "fixture_id": 10,
               "color": {
-                "intensity": 0
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
               },
               "fade": 0,
               "checked": false
@@ -585,10 +558,7 @@
             {
               "fixture_id": 11,
               "color": {
-                "intensity": 0,
-                "red": 0,
-                "green": 0,
-                "blue": 0
+                "intensity": 0
               },
               "fade": 0,
               "checked": false
@@ -596,14 +566,6 @@
             {
               "fixture_id": 12,
               "color": {
-                "intensity": 0
-              },
-              "fade": 0,
-              "checked": false
-            },
-            {
-              "fixture_id": 13,
-              "color": {
                 "intensity": 0,
                 "red": 0,
                 "green": 0,
@@ -613,7 +575,7 @@
               "checked": false
             },
             {
-              "fixture_id": 14,
+              "fixture_id": 13,
               "color": {
                 "intensity": 0
               },
@@ -625,5 +587,5 @@
       ]
     }
   ],
-  "patch": "katmandu.json"
+  "patch": "laundry.json"
 }

@@ -14,177 +14,221 @@
               "fixture_id": 1,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 2,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 3,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 4,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 5,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 6,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 7,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 8,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 9,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 10,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 11,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 12,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 13,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 14,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 15,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
             },
             {
               "fixture_id": 16,
               "color": {
                 "intensity": 65535,
-                "red": 0,
-                "green": 0,
+                "red": 255,
+                "green": 255,
                 "blue": 255
               },
               "fade": 0,
-              "checked": false
+              "checked": true
+            },
+            {
+              "fixture_id": 17,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": true
+            },
+            {
+              "fixture_id": 18,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": true
+            },
+            {
+              "fixture_id": 19,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": true
+            },
+            {
+              "fixture_id": 20,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": true
             }
           ]
         },
@@ -194,183 +238,207 @@
             {
               "fixture_id": 1,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 2,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 3,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 4,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 5,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 6,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 7,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 8,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 9,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 10,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 11,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 12,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 13,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 14,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 15,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
             },
             {
               "fixture_id": 16,
               "color": {
-                "intensity": 65535,
-                "red": 255,
+                "intensity": 0,
+                "red": 0,
                 "green": 0,
                 "blue": 0
               },
-              "fade": 0,
-              "checked": false
+              "fade": 0
+            },
+            {
+              "fixture_id": 17,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0
+            },
+            {
+              "fixture_id": 18,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0
+            },
+            {
+              "fixture_id": 19,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0
+            },
+            {
+              "fixture_id": 20,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0
             }
           ]
         }
       ]
     }
   ],
-  "patch": "laundry.json"
+  "patch": "blink.json"
 }

@@ -163,6 +163,94 @@
               },
               "fade": 0,
               "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 17,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 18,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 19,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 20,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 21,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 22,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 0,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
             }
           ]
         },
@@ -322,6 +410,94 @@
               },
               "fade": 0,
               "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 17,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 18,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 19,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 20,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 21,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 22,
+              "color": {
+                "intensity": 65535,
+                "red": 0,
+                "green": 255,
+                "blue": 255
+              },
+              "fade": 0,
+              "checked": false
             }
           ]
         },
@@ -481,6 +657,94 @@
               },
               "fade": 0,
               "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 17,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 18,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 19,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 20,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 21,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 22,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
             }
           ]
         },
@@ -614,6 +878,85 @@
             },
             {
               "fixture_id": 14,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 15,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 16,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 17,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 18,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 19,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 20,
+              "color": {
+                "intensity": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 21,
+              "color": {
+                "intensity": 0,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              },
+              "fade": 0,
+              "checked": false
+            },
+            {
+              "fixture_id": 22,
               "color": {
                 "intensity": 0
               },
@@ -625,5 +968,5 @@
       ]
     }
   ],
-  "patch": "katmandu.json"
+  "patch": "bank.json"
 }
