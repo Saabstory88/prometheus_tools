@@ -22,6 +22,11 @@
                 Save
               </button>
             </div>
+            <label class="form-check-label">
+              <input id="shouldDeselect" type="checkbox" class="form-check-input" style="padding-left: 10px;">
+              </input>
+                Deselect
+            </label>
           </form>
         </div>
         <br>
@@ -200,7 +205,7 @@
               </div>
             </div>
 
-            
+
           <div class="card-body">
             <div each={ step , j in cuestack.cuesteps } class="card" style="margin-bottom: 10px;">
 
@@ -209,7 +214,7 @@
                   <div class="col">
                     <div class="btn-group  float-right" role="group" aria-label="ActionButtons">
                       <button type="button " class="btn btn-sm btn-dark" disabled>
-                        STEP: #{ (j + 1) }
+                        STEP: #{ (j + 1) }/{ cuestack.cuesteps.length }
                       </button>
                       <button type="button " class="btn btn-sm btn-primary" disabled>
                         W: { (step.wait / 1000) }s
@@ -217,18 +222,29 @@
                       <button type="button " class="btn btn-sm btn-primary" disabled>
                         F: { (step.fixtures[0].fade / 1000) }s
                       </button>
-                      <button type="button " class="btn btn-sm btn-success" disabled>
+                      <button type="button " class="btn btn-sm btn-warning" disabled>
                         <i class="fa fa-chevron-up" aria-hidden="true"></i>
                       </button>
-                      <button type="button " class="btn btn-sm btn-success" disabled>
+                      <button type="button " class="btn btn-sm btn-warning" disabled>
                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                       </button>
-                      <button id="selAll_{i}_{j}" class="btn btn-sm btn-success" type="button" onclick="{ selectThese }">
-                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <button class="btn btn-sm btn-warning" type="button">
+                        <i id="selAll_{i}_{j}" class="fa fa-clone" aria-hidden="true" onclick="{ copyCuestep }"></i>
                       </button>
                       <button type="button " class="btn btn-sm btn-warning" data-toggle="collapse" data-target="#colEditStack{i}Step{j}">
                         <i class="fa fa-wrench" aria-hidden="true"></i>
                       </button>
+                      <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i  id="selAll_{i}_{j}" class="fa fa-check" aria-hidden="true" onclick="{ selectThese }"></i>
+                      </button>
+                      <div class="dropdown-menu" style="padding: 5px;">
+                        <button class="btn btn-sm btn-warning">
+                          <i id="desAll_{i}_{j}" class="fa fa-ban" aria-hidden="true" onclick="{ deselectThese }"></i>
+                        </button>
+                        <button class="btn btn-sm btn-warning">
+                          <i class="fa fa-ban" aria-hidden="true"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -250,13 +266,13 @@
                         <div class="col">
                           <p>Timing (Seconds)</p>
                           <div class="input-group" style="margin: 5px;">
-                            <input id="upWait_{ i }_{ j }" type="number" class="form-control" value="5">
+                            <input id="upWait_{ i }_{ j }" type="number" class="form-control" value="{ (step.wait / 1000) }">
                             <span class="input-group-btn">
                               <button id="btnUpWait_{ i }_{ j }"class="btn btn-warning" type="button" onclick="{ updateWait }">Update Wait</button>
                             </span>
                           </div>
                           <div class="input-group" style="margin: 5px;">
-                            <input id="upFade_{ i }_{ j }" type="number" class="form-control" value="5">
+                            <input id="upFade_{ i }_{ j }" type="number" class="form-control" value="{ (step.fixtures[0].fade / 1000) }">
                             <span class="input-group-btn">
                               <button id="btnUpFade_{ i }_{ j }"class="btn btn-warning" type="button" onclick="{ updateFade }">Update Fade</button>
                             </span>
@@ -344,6 +360,18 @@ selectThese(e){
   this.save();
 }
 
+deselectThese(e){
+  e.preventDefault();
+  elID = e.srcElement.id.split('_');
+  let csid = parseInt(elID[1]);
+  let stid = parseInt(elID[2]);
+  console.log(elID);
+  for(let i = 0; i < this.cuefile.cuestacks[csid].cuesteps[stid].fixtures.length; i++){
+    this.cuefile.cuestacks[csid].cuesteps[stid].fixtures[i].checked = false;
+  }
+  this.save();
+}
+
 updateWait(e){
   e.preventDefault();
   let elID = '#' + e.srcElement.id.replace("btnUpWait", "upWait");
@@ -399,6 +427,10 @@ setColorActive(color){
       }
     }
   }
+  if($("#shouldDeselect").prop('checked')){
+    this.deselectAll();
+  }
+  this.save();
 }
 
 batchSelect(state){
@@ -418,7 +450,10 @@ selectAll(e){
 }
 
 deselectAll(e){
-  e.preventDefault();
+  if(e){
+    e.preventDefault();
+  }
+
   this.batchSelect(false);
   this.save();
 }
@@ -470,6 +505,18 @@ newCuestack(opts){
     cuesteps: []
   }
   return newCS;
+}
+
+copyCuestep(e){
+  e.preventDefault();
+  let elID = e.target.id;
+  elID = elID.split('_');
+  let csid = parseInt(elID[1]);
+  let stid = parseInt(elID[2]);
+  console.log(elID);
+  this.cuefile.cuestacks[csid].cuesteps.push($.extend({}, this.cuefile.cuestacks[csid].cuesteps[stid]));
+  //alert("Copied step " + (stid + 1) + " to the end of Stack " + (csid + 1));
+  this.save();
 }
 
 newCuestep(opts){
