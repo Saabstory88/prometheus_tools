@@ -1,0 +1,22 @@
+{
+  "name": "prometheus-osc",
+  "version": "1.0.0",
+  "description": "Simple tools to work with prometheus OSC",
+  "main": "osc.js",
+  "scripts": {
+    "test": "node osc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saabstory88/prometheus_tools.git"
+  },
+  "author": "Peter Milo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saabstory88/prometheus_tools/issues"
+  },
+  "homepage": "https://github.com/Saabstory88/prometheus_tools#readme",
+  "dependencies": {
+    "osc-min": "^1.1.1"
+  }
+}
