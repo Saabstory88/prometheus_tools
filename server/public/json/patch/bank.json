@@ -9,7 +9,8 @@
     "fixture_type": 1,
     "label": "Fixture 1",
     "num_channels": 3,
-    "start_address": 1
+    "start_address": 1,
+    "link": 2
   },
   {
     "channel_map": [
@@ -31,7 +32,8 @@
     "fixture_type": 1,
     "label": "Fixture 3",
     "num_channels": 3,
-    "start_address": 5
+    "start_address": 5,
+    "link": 4
   },
   {
     "channel_map": [
@@ -53,7 +55,8 @@
     "fixture_type": 1,
     "label": "Fixture 5",
     "num_channels": 3,
-    "start_address": 9
+    "start_address": 9,
+    "link": 6
   },
   {
     "channel_map": [
@@ -75,7 +78,8 @@
     "fixture_type": 1,
     "label": "Fixture 7",
     "num_channels": 3,
-    "start_address": 13
+    "start_address": 13,
+    "link": 8
   },
   {
     "channel_map": [
@@ -97,7 +101,8 @@
     "fixture_type": 1,
     "label": "Fixture 9",
     "num_channels": 3,
-    "start_address": 17
+    "start_address": 17,
+    "link": 10
   },
   {
     "channel_map": [
@@ -119,7 +124,8 @@
     "fixture_type": 1,
     "label": "Fixture 11",
     "num_channels": 3,
-    "start_address": 21
+    "start_address": 21,
+    "link": 12
   },
   {
     "channel_map": [
@@ -165,7 +171,8 @@
     "fixture_type": 1,
     "label": "Fixture 15",
     "num_channels": 3,
-    "start_address": 31
+    "start_address": 31,
+    "link": 16
   },
   {
     "channel_map": [
@@ -187,7 +194,8 @@
     "fixture_type": 1,
     "label": "Fixture 17",
     "num_channels": 3,
-    "start_address": 35
+    "start_address": 35,
+    "link": 18
   },
   {
     "channel_map": [
@@ -209,7 +217,8 @@
     "fixture_type": 1,
     "label": "Fixture 19",
     "num_channels": 3,
-    "start_address": 39
+    "start_address": 39,
+    "link": 20
   },
   {
     "channel_map": [
@@ -231,7 +240,8 @@
     "fixture_type": 1,
     "label": "Fixture 21",
     "num_channels": 3,
-    "start_address": 43
+    "start_address": 43,
+    "link": 22
   },
   {
     "channel_map": [
