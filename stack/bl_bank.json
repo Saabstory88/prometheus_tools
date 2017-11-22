@@ -24,7 +24,7 @@
             {
               "fixture_id": 2,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -46,7 +46,7 @@
             {
               "fixture_id": 4,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -68,7 +68,7 @@
             {
               "fixture_id": 6,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -90,7 +90,7 @@
             {
               "fixture_id": 8,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -112,7 +112,7 @@
             {
               "fixture_id": 10,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -134,7 +134,7 @@
             {
               "fixture_id": 12,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -178,7 +178,7 @@
             {
               "fixture_id": 16,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -200,7 +200,7 @@
             {
               "fixture_id": 18,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -222,7 +222,7 @@
             {
               "fixture_id": 20,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
@@ -244,7 +244,7 @@
             {
               "fixture_id": 22,
               "color": {
-                "intensity": 65535,
+                "intensity": 0,
                 "red": 0,
                 "green": 0,
                 "blue": 0
