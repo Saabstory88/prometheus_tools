@@ -1,0 +1,157 @@
+[
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 1,
+    "fixture_type": 1,
+    "label": "Bank 1",
+    "num_channels": 4,
+    "start_address": 1
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 2,
+    "fixture_type": 1,
+    "label": "Bank 2",
+    "num_channels": 4,
+    "start_address": 5
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 3,
+    "fixture_type": 1,
+    "label": "Bank 3",
+    "num_channels": 4,
+    "start_address": 9
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 4,
+    "fixture_type": 1,
+    "label": "Bank 4",
+    "num_channels": 4,
+    "start_address": 13
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 5,
+    "fixture_type": 1,
+    "label": "Bank 5",
+    "num_channels": 4,
+    "start_address": 17
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 6,
+    "fixture_type": 1,
+    "label": "Bank 6",
+    "num_channels": 4,
+    "start_address": 21
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 7,
+    "fixture_type": 1,
+    "label": "Dance 1",
+    "num_channels": 3,
+    "start_address": 25
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 8,
+    "fixture_type": 1,
+    "label": "Dance 2",
+    "num_channels": 3,
+    "start_address": 28
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 9,
+    "fixture_type": 1,
+    "label": "Dance 3",
+    "num_channels": 4,
+    "start_address": 31
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 10,
+    "fixture_type": 1,
+    "label": "Dance 4",
+    "num_channels": 4,
+    "start_address": 35
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 11,
+    "fixture_type": 1,
+    "label": "Deli 1",
+    "num_channels": 4,
+    "start_address": 39
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 12,
+    "fixture_type": 1,
+    "label": "Deli 2",
+    "num_channels": 4,
+    "start_address": 43,
+    "link": 22
+  }
+]

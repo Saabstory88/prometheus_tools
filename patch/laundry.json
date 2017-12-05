@@ -1,0 +1,103 @@
+[
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 1,
+    "fixture_type": 1,
+    "label": "Laundry 1",
+    "num_channels": 4,
+    "start_address": 1
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 2,
+    "fixture_type": 1,
+    "label": "Laundry 2",
+    "num_channels": 4,
+    "start_address": 5
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 3,
+    "fixture_type": 1,
+    "label": "Laundry 3",
+    "num_channels": 4,
+    "start_address": 9
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 4,
+    "fixture_type": 1,
+    "label": "Caliente 1",
+    "num_channels": 3,
+    "start_address": 13
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 5,
+    "fixture_type": 1,
+    "label": "Caliente 2",
+    "num_channels": 3,
+    "start_address": 16
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4
+    ],
+    "fixture_id": 6,
+    "fixture_type": 1,
+    "label": "Caliente 3",
+    "num_channels": 3,
+    "start_address": 19
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 7,
+    "fixture_type": 1,
+    "label": "Cricket 1",
+    "num_channels": 4,
+    "start_address": 22
+  },
+  {
+    "channel_map": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fixture_id": 8,
+    "fixture_type": 1,
+    "label": "Cricket 2",
+    "num_channels": 4,
+    "start_address": 26
+  }
+]
