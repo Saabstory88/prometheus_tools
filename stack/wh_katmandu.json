@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "cuestacks": [
+    {
+      "cuestack_id": 1,
+      "label": "White",
+      "tweet": "None",
+      "loop": true,
+      "cuesteps": [
+        {
+          "wait": 5000,
+          "fixtures": [
+            {
+              "fixture_id": 1,
+              "fade": 1000,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "white": 255
+              }
+            },
+            {
+              "fixture_id": 2,
+              "fade": 1000,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "white": 255
+              }
+            },
+            {
+              "fixture_id": 3,
+              "fade": 1000,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "white": 255
+              }
+            },
+            {
+              "fixture_id": 4,
+              "fade": 1000,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "white": 255
+              }
+            },
+            {
+              "fixture_id": 5,
+              "fade": 1000,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "white": 255
+              }
+            },
+            {
+              "fixture_id": 6,
+              "fade": 1000,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "white": 255
+              }
+            },
+            {
+              "fixture_id": 7,
+              "fade": 1000,
+              "color": {
+                "intensity": 65535,
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "white": 255
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
